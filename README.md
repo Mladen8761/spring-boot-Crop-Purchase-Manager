@@ -36,7 +36,7 @@ spring.jpa.hibernate.ddl-auto=update
 4.	**Run the application:**
 
 
-Usage
+**Usage**
 	•	Add Operators:
 	•	Navigate to the operator management page and add/edit operators.
 	•	Record Transactions:
@@ -46,21 +46,15 @@ Usage
 	•	Manage Packaging:
 	•	Track loans and returns of packaging materials.
 
-Folder Structure
 
-src/
-├── main/
-│   ├── java/com/Mladen/otkupproizvoda/        # Java source code
-│   └── resources/                             # Configuration files
-├── test/                                      # Unit tests
-pom.xml                                        # Maven configuration
 
-Future Enhancements
+**Future Enhancements**
+
 	•	Integration with external APIs (e.g., weather APIs for crop planning).
 	•	Dashboard for tracking total purchases, packaging status, and operator performance.
 	•	Export reports in CSV or Excel formats.
 
-License
+**License**
 
 This project is licensed under the MIT License.
 
