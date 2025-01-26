@@ -24,19 +24,24 @@ A Spring Boot application for managing the procurement of agricultural products 
    git clone https://github.com/Mladen8761/spring-boot-Crop-Purchase-Manager.git
 2.	**Navigate to the project directory:**
    cd ispring-boot-Crop-Purchase-Manager
+
 3.	**Configure the database:**
+   
 	•	Create a MySQL database for the app.
 	•	Update the application.properties file with your database credentials:
+
 
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
+
 4.	**Run the application:**
 
 
 **Usage**
+
 	•	Add Operators:
 	•	Navigate to the operator management page and add/edit operators.
 	•	Record Transactions:
