@@ -199,6 +199,12 @@ public class TransakcijaController {
             );
 
             canvas.showTextAligned(
+                    new Paragraph("Kosmajska 11V, 11450 Sopot Beograd"),
+                    370, 490, // Opet niže
+                    TextAlignment.LEFT
+            );
+
+            canvas.showTextAligned(
                     new Paragraph(operantService.findById(transakcija.getOperantId()).getFullName()+" "+transakcija.getOperantId()),
                     130, 515, // Opet niže
                     TextAlignment.LEFT

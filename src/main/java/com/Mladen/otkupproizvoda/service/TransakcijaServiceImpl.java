@@ -19,7 +19,7 @@ public class TransakcijaServiceImpl implements TransakcijaService{
 
     @Override
     public void save(Transakcija transakcija) {
-        transakcija.setKilaza(transakcija.getKilaza()-(transakcija.getBrojKutija()*0.5));
+        transakcija.setKilaza(Math.round((transakcija.getKilaza()-(transakcija.getBrojKutija()*0.5))*100.0)/100.0);
         Operant tempOperant= operantService.findById(transakcija.getOperantId());
         tempOperant.setBrojZaduzenihKutija(tempOperant.getBrojZaduzenihKutija()-transakcija.getBrojKutija());
         tempOperant.setBrojZaduzenihPosuda(tempOperant.getBrojZaduzenihPosuda()-(transakcija.getBrojKutija()*8));
